@@ -374,31 +374,17 @@ tm_shape(World) +
 
 
 ## Advanced Week 1 Lab Assignment
-In this week's lab, you will make an open science markdown that documents your process of data analysis and geovisualization. We will be using git to aid in version control for the code. Your assignment is to use Knitr to develop a markdown document that shows your analysis of the Boulder data (you can also use your own data if you wish). Demonstrate how you did your analysis giving step-by-step instructions with the accompanying code. Include 1 chart and 1 map. Structure and explain your analysis with text, headings, highlights, images and other markdown basics.       
-
-
-### Steps for Hosting a HTML of your RMD as a Website on GitHubn (Bonus)
-It is rather simple to make your html publicly available via github. Here is an example of one I made for a recent paper <https://derekvanberkel.github.io/Planning-for-climate-migration-in-Great-Lake-Legacy-Cities/>. Below are the step to make the knit html you make for this lab into a statitic website. Here is another website that give more detail <https://blog.flycode.com/how-to-deploy-a-static-website-for-free-using-github-pages>  
-
-+ Create a GitHub account on github.com.
-+ Create a new repository in your GitHub application. Name it your-username.github.io. The name is very important. Note the folder that GitHub is saving the repository to. Make sure the "Push to GitHub?" box is checked. This will be the url of your website. Name it accordingly
-+ Move your html file that you knit into the folder that GitHub just created when you made the repository. IMPORTANT: Your homepage HTML file must be called "index.html", and it must exist in the top-level directory.
-+ Enter a message in the text box called "commit summary", something like "initial commit." Then, click the commit button.
-+Now click the `Settings` button on the repository site. Navigate to the `Pages` tab and click it. Under branch click the `None` dropdown and choose main, and save it. 
-+It might take some time (give it about 10 minutes), then check this page to see the url associated with the website. Your website should be live! 
-
-
-
-
+In this week's lab, you will make an open science markdown that documents your process of data analysis and geovisualization. We will be using git to aid in version control for the code. Your assignment is to use Knitr to develop a markdown document that shows your analysis of the Boulder data (you can also use your own data if you wish). Demonstrate how you did your analysis giving step-by-step instructions with the accompanying code.       
 
 ### Questions
 1. Discuss the advantages and challenges associated with an open data science approach. Provide an example based on this week's reading. (1-2 paragraphs)
 
-2. Create a markdown document that showcases an analysis of this week's data or any other dataset of your choice. Include descriptive text that explains your analysis, and incorporate figures and geovisualizations.
+2. Create a markdown document that showcases an analysis of this week's data or any other dataset of your choice. Include descriptive text that explains your analysis, and incorporate figures and geovisualizations.Include 1 chart and 1 map. Structure and explain your analysis with text, headings, highlights, images and other markdown basics. 
 
 Bonus: Capture a screenshot of the history of your Git commits. Share your strategy for utilizing Git in your workflow.
 
 Here are the evaluation criteria for the geovisualizations. Questions will be worth 30% of your grade, while the geovisualization and explanation will be worth 70%.    
+
 
 | Evaluation              | *Highly well-done* 	|*Well-done* 	| *Some deficiencies* 	| *Several deficiencies* 	|
 |--------------------------|-------------|-------------|-------------|-------------|
@@ -407,6 +393,69 @@ Here are the evaluation criteria for the geovisualizations. Questions will be wo
 | **Content**  -   20% (relevant, coherent and interesting topic, appropriate subject matter   given the presented information/data, free of bias and error ) 	| Highly relevant coherent, and interesting;   consistent information free of bias and error (100%) 	| Mostly relevant coherent, and interesting;    consistent information free of bias and error (99 -80%) 	| Somewhat relevant coherent, and interesting;   some inconsistencies in information(79-50%) 	| Minimally relevant coherent, and interesting;   inconsistencies in information  (<50%) 	|
 | **Aesthetics**    - 20% (is the map attractive, are there objective elements that are popularly viewed as beautiful)  | Highly attractive/ beautiful (100%) 	| Mostly attractive/ beautiful (99 -80%) 	| Somewhat attractive/beautiful (79-50%) 	| Minimally attractive beautiful (<50%) 	|
 | **Creativity and  persuasiveness**  - 20% (imaginative information/data,   convincing argumentation, presence of sustainability principles) 	| Highly imaginative; convincing of   sustainability  principles (100%) 	| Mostly imaginative; convincing of   sustainability  principles (99   -80%) 	| Somewhat imaginative; less convincing of   sustainability  principles (79-50%) 	| Minimally imaginative; not convincing of   sustainability  principles (<50%)    |    
+
+
+### Optional steps for Hosting a HTML of your RMD as a Website on GitHubn 
+It is rather simple to make your html publicly available via github. Here is an example of one I made for a recent paper <https://derekvanberkel.github.io/Planning-for-climate-migration-in-Great-Lake-Legacy-Cities/>. Below are the step to make the knit html you make for this lab into a static website. Here is another website that give more detail <https://blog.flycode.com/how-to-deploy-a-static-website-for-free-using-github-pages>  
+
+
+**Create a New Repository:**
+
+1. Click on the '+' sign at the top right corner and select "New repository."
+
+**Fill in Repository Information:**
+
+1. Choose a name for your repository. This will be part of your website's URL, so choose it accordingly.
+2. You can choose to make the repository public (visible to everyone) or private (restricted access).
+3. Optionally, add a description for your repository.
+4. Make sure the "Initialize this repository with a README" option is unchecked.
+5. Click the "Create repository" button.
+
+**Add Your HTML File:**
+
+Now, you need to add your HTML file to the repository. You can do this in several ways:
+- Use the GitHub web interface to upload your HTML file. Click on the "Add file" button, then select "Upload files" and follow the instructions.
+- If you're comfortable with Git, you can clone your repository to your local machine, add your `index.html` file to the local folder, and push the changes back to GitHub.
+
+**Commit Changes:**
+
+After adding your HTML file to the repository, you need to commit the changes. On the GitHub website:
+1. Navigate to the repository.
+2. Click on the "Add file" button and select "Create a new file."
+3. Name the file `index.html` and add your HTML code to it.
+4. Scroll down to the "Commit new file" section.
+5. Enter a "Commit summary" (e.g., "Initial commit").
+6. Click the "Commit new file" button.
+
+**Configure GitHub Pages:**
+
+Once your HTML file is in the repository, go to your repository's main page.
+1. Click on the "Settings" tab (located towards the right, under your repository's name).
+2. Scroll down to the "GitHub Pages" section
+3. Navigate to the `Pages` tab and click it
+4. Under the "Source" section, click the dropdown under "Branch" and select "main" (or your repository's default branch).
+5. Click the "Save" button.
+
+**Wait for Deployment:**
+
+GitHub Pages may take a few minutes to build and deploy your site. Be patient; it usually happens within 10 minutes.
+
+**Access Your Live Website:**
+
+After GitHub Pages has deployed your site, you'll find the URL associated with your website in the "GitHub Pages" section of your repository's settings. It should be something like `https://yourusername.github.io/repositoryname`.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
